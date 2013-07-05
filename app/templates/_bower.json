@@ -1,0 +1,11 @@
+{
+    "name": "<% _.slugify(siteName)%>", 
+    "version": "0.0.0",
+    "dependencies": {
+        "bootstrap": "~2.3.0", 
+        "modernizr": "~2.6.2", 
+        "prefix-free": "*", 
+        "requirejs": "2.1.4", 
+        "underscore": "*"
+    }
+}

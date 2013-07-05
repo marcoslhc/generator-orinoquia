@@ -1,0 +1,4 @@
+{
+    "directory":"<%= config.bowerComponents %>",
+    "json":"bower.json"
+}

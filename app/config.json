@@ -1,0 +1,8 @@
+{
+	"basePath":"app/",
+	"scripts":"scripts",
+	"bowerComponents":"components",
+	"lessFiles":"less",
+	"cssFiles":"css",
+	"images":"images"
+}

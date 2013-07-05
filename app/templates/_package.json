@@ -1,0 +1,14 @@
+{
+    "dependencies": {}, 
+    "devDependencies": {
+        "grunt":                  "*", 
+        "grunt-bower-requirejs":  "*", 
+		    "grunt-contrib":          "*",
+        "grunt-open":             "*", 
+        "grunt-svgmin":           "*", 
+        "grunt-usemin":           "*", 
+        "matchdep":               "*"
+    }, 
+    "name": "<%= _.slugify(siteName) %>", 
+    "version": "0.0.0"
+}

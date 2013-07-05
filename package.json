@@ -1,0 +1,37 @@
+{
+    "author": {
+        "email": "marcoslhc@gmail.com", 
+        "name": "marcoslhc", 
+        "url": "https://github.com/marcoslhc"
+    }, 
+    "bugs": "https://github.com/marcoslhc/generator-orinoquia/issues", 
+    "dependencies": {
+        "yeoman-generator": "~0.10.2"
+    }, 
+    "description": "A generator for Yeoman", 
+    "devDependencies": {
+        "mocha": "~1.9.0"
+    }, 
+    "engines": {
+        "node": ">=0.8.0"
+    }, 
+    "homepage": "https://github.com/marcoslhc/generator-orinoquia", 
+    "keywords": [
+        "generator-orinoquia"
+    ], 
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ], 
+    "main": "app/index.js", 
+    "name": "generator-orinoquia", 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/marcoslhc/generator-orinoquia.git"
+    }, 
+    "scripts": {
+        "test": "mocha"
+    }, 
+    "version": "0.0.0"
+}
