@@ -1,5 +1,5 @@
 # Yeoman generator
-[![Build Status](https://secure.travis-ci.org/marcoslhc/yeoman-generator.png?branch=master)](https://travis-ci.org/marcoslhc/yeoman-generator)
+[![Build Status](https://secure.travis-ci.org/marcoslhc/generator-orinoquia.png?branch=master)](https://travis-ci.org/marcoslhc/generator-orinoquia)
 
 A generator for Yeoman.
 
@@ -24,6 +24,7 @@ As usual in any yeoman project, generator-orinoquia uses bower for client-side p
 The grunt commands and task used are:
 
 * Development Server: `grunt server`
+    * clean ([grunt-contrib-clean]())
     * 
 * Test: `grunt build:test`
 * Dist: `grunt build:dist`
