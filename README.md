@@ -23,11 +23,28 @@ As usual in any yeoman project, generator-orinoquia uses bower for client-side p
 
 The grunt commands and task used are:
 
-* Development Server: `grunt server`
-    * clean ([grunt-contrib-clean]())
-    * 
-* Test: `grunt build:test`
-* Dist: `grunt build:dist`
+#### Development Server: `grunt server` ####
+* [clean](https://npmjs.org/package/grunt-contrib-clean)
+* [recess](https://npmjs.org/package/grunt-recess)
+* [copy](https://npmjs.org/package/grunt-contrib-copy)
+* [open](https://npmjs.org/package/grunt-open))
+* [connect](https://npmjs.org/package/grunt-contrib-connect)
+* [watch](https://npmjs.org/package/grunt-contrib-watch)
+
+**TODO:**
+
+#### Build: `grunt build` ####
+* clean
+* copy
+* useminPrepare
+* cssmin
+* concat
+* uglify
+* copy
+* usemin
+
+#### Test ####
+* mocha
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
