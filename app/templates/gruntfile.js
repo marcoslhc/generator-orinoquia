@@ -80,12 +80,12 @@ module.exports = function (grunt) {
             ]
         },
         less:{
-            build:{
+            dev:{
                 files:[{
                     expand:true,
                     cwd:'./',
                     src:['<%%= yeoman.less %>/**/*.less'],
-                    dest:['<%%= yeoman.css %>/'],
+                    dest:'<%%= yeoman.css %>/',
                     ext:'.css'
                 }]
             },
@@ -97,10 +97,36 @@ module.exports = function (grunt) {
                     expand:true,
                     cwd:'./',
                     src:['<%%= yeoman.less %>/**/*.less'],
-                    dest:['<%%= yeoman.dist %>/<%= config.cssFiles %>/'],
+                    dest:'<%%= yeoman.dist %>/<%= config.cssFiles %>/',
                     ext:'.css'
                 }]
             }
+        },
+        recess:{
+          dev:{
+            files:[{
+                expand:true,
+                cwd:'./',
+                src:['<%%= yeoman.less %>/**/*.less'],
+                dest:'<%%= yeoman.css %>/<%= config.cssFiles %>/',
+                ext:'.css'
+            }],
+            options:{
+              compile:true
+            }
+          },
+          dist:{
+            files:[{
+                expand:true,
+                cwd:'./',
+                src:['<%%= yeoman.less %>/**/*.less'],
+                dest:'<%%= yeoman.dist %>/<%= config.cssFiles %>/',
+                ext:'.css'
+            }],
+            options:{
+              compile:true
+            }
+          }
         },
         useminPrepare: {
             html: '<%%= yeoman.basePath %>/index.html',
@@ -184,7 +210,7 @@ module.exports = function (grunt) {
         }
         grunt.task.run([
             'clean:server',
-            'recess',
+            'recess:dev',
             'copy:server',
             'open',
             'connect:server:keepalive',
